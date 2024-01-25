@@ -3,8 +3,6 @@ package com.ligaoqi.finalpractice.http;
 import android.text.TextUtils;
 import android.util.Log;
 
-import androidx.annotation.NonNull;
-
 import java.io.IOException;
 
 import okhttp3.Interceptor;
@@ -19,9 +17,8 @@ public class HttpInterceptor implements Interceptor {
 
     private final String TAG = "LoggerInterceptor";
 
-    @NonNull
     @Override
-    public Response intercept(@NonNull Chain chain) throws IOException {
+    public Response intercept( Chain chain) throws IOException {
         Request request = chain.request();
         Log.i(TAG, "request信息:" + request.toString());
 

@@ -16,7 +16,6 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.ligaoqi.finalpractice.entity.BaseBean;
@@ -47,7 +46,7 @@ public class LoginActivity extends AppCompatActivity {
 
     private Handler handler = new Handler(Looper.getMainLooper(), new Handler.Callback() {
         @Override
-        public boolean handleMessage(@NonNull Message msg) {
+        public boolean handleMessage(Message msg) {
             if(msg.what == 100){
                 totalCount--;
                 getVerifyNum.setTextColor(getResources().getColor(R.color.gray));
