@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="360dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view_layout_3"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:cardCornerRadius="15dp"
+        app:cardBackgroundColor="#FFFFFF"
+        app:cardElevation="2dp">
+
+        <ImageView
+            android:id="@+id/recycler_game_img_1_layout_3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"/>
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/recycler_game_name_layout_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="3dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="14sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:text="hello"
+
+        app:layout_constraintLeft_toRightOf="@+id/card_view_layout_3"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/recycler_game_brief_layout_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="3dp"
+
+        android:maxLines="1"
+        android:ellipsize="end"
+
+        android:textSize="10sp"
+        android:text="hello"
+
+        app:layout_constraintLeft_toRightOf="@+id/card_view_layout_3"
+        app:layout_constraintTop_toBottomOf="@+id/recycler_game_tags_layout_3"/>
+
+    <TextView
+        android:id="@+id/recycler_game_tags_layout_3"
+        android:layout_width="wrap_content"
+        android:layout_height="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="3dp"
+        android:padding="2dp"
+        android:text="hello"
+        android:textSize="8sp"
+        android:background="@drawable/tags_border"
+
+        app:layout_constraintLeft_toRightOf="@+id/card_view_layout_3"
+        app:layout_constraintTop_toBottomOf="@+id/recycler_game_name_layout_3"/>
+    
+    <Button
+        android:id="@+id/recycler_view_second_play"
+        android:layout_width="46dp"
+        android:layout_height="25dp"
+        android:gravity="center"
+        android:layout_marginTop="31dp"
+        android:layout_marginRight="16dp"
+        android:textSize="12sp"
+        android:background="@drawable/button_border"
+        android:text="秒玩"
+        android:textStyle="bold"
+
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

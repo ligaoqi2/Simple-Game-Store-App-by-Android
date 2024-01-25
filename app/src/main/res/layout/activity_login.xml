@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="360dp"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/header_img"
+        android:layout_width="360dp"
+        android:layout_height="318dp"
+        android:layout_marginTop="-118dp"
+        android:scaleType="fitEnd"
+        android:src="@drawable/login_header" />
+
+    <TextView
+        android:id="@+id/hello"
+        android:layout_width="117dp"
+        android:layout_height="78dp"
+        android:layout_marginLeft="40dp"
+        android:layout_below="@+id/header_img"
+        android:text="您好\n请先登录"
+        android:textColor="@color/black"
+        android:textSize="28sp"/>
+
+    <FrameLayout
+        android:id="@+id/layout_phone_num"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/hello"
+        android:layout_marginTop="46dp">
+
+        <EditText
+            android:id="@+id/phone_num"
+            android:layout_width="290dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="40dp"
+            android:paddingLeft="16dp"
+            android:textSize="14sp"
+            android:maxLength="11"
+            android:background="@drawable/edittext_border_login"
+            android:hint="手机号码"
+            android:inputType="number"
+            android:focusable="true"
+            android:focusableInTouchMode="false"/>
+    </FrameLayout>
+
+
+    <FrameLayout
+        android:id="@+id/layout_verify_num"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/layout_phone_num"
+        android:layout_marginTop="10dp">
+
+        <EditText
+            android:id="@+id/verify_num"
+            android:layout_width="290dp"
+            android:layout_height="40dp"
+            android:paddingLeft="16dp"
+            android:layout_gravity="center_horizontal"
+            android:textSize="14sp"
+            android:background="@drawable/edittext_border_login"
+            android:hint="验证码"
+            android:maxLength="6"
+            android:inputType="number"
+            android:focusable="true"
+            android:focusableInTouchMode="false"/>
+
+        <TextView
+            android:id="@+id/get_verify_num"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|end"
+            android:layout_marginRight="50dp"
+            android:gravity="center"
+            android:text="获取验证码"
+            android:textColor="@color/gray"
+            android:textSize="13sp" />
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="23dp"
+        android:layout_marginTop="26dp"
+        android:layout_below="@+id/layout_verify_num"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/verify_privacy_choose"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_marginLeft="51dp"
+            android:src="@drawable/verify_privacy_no" />
+
+        <TextView
+            android:id="@+id/verify_privacy_content"
+            android:layout_width="228dp"
+            android:layout_height="16dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="4dp"
+            android:layout_toRightOf="@+id/verify_privacy_choose"
+            android:text="@string/privacy_content"
+            android:textSize="11sp" />
+        
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/login_account"
+        android:layout_width="236dp"
+        android:layout_height="46dp"
+        android:layout_marginLeft="63dp"
+        android:layout_marginTop="480dp"
+
+        android:background="@drawable/edittext_border"
+        android:text="登录"
+        android:textColor="@color/gray" />
+
+    
+</RelativeLayout>

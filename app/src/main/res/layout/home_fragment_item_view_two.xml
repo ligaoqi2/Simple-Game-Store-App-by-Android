@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="360dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal">
+
+    <!--    1-->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view_1_layout_2"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="23dp"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:cardCornerRadius="15dp"
+        app:cardBackgroundColor="#FFFFFF"
+        app:cardElevation="2dp">
+
+        <ImageView
+            android:id="@+id/recycler_game_img_1_layout_2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"/>
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/recycler_game_view_1_layout_2"
+        android:layout_width="64dp"
+        android:layout_height="16dp"
+        android:layout_below="@+id/card_view_1_layout_2"
+        android:layout_marginLeft="23dp"
+        android:layout_marginTop="6dp"
+        android:gravity="center"
+
+        android:maxLines="1"
+        android:ellipsize="end"
+
+        android:text="hello"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/recycler_game_brief_1_layout_2"
+        android:layout_width="64dp"
+        android:layout_height="12dp"
+        android:layout_below="@+id/recycler_game_view_1_layout_2"
+        android:layout_marginLeft="23dp"
+
+        android:maxLines="1"
+        android:ellipsize="end"
+
+        android:gravity="center"
+        android:text="hello"
+        android:textSize="10sp" />
+
+    <Button
+        android:id="@+id/recycler_view_1_play_layout_2"
+        android:layout_width="46dp"
+        android:layout_height="25dp"
+        android:layout_below="@+id/recycler_game_brief_1_layout_2"
+        android:layout_marginLeft="31dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="3dp"
+        android:background="@drawable/button_border"
+        android:gravity="center"
+        android:text="秒玩"
+        android:textSize="12sp"
+        android:textStyle="bold"
+
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--    2-->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view_2_layout_2"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="23dp"
+        android:layout_toRightOf="@+id/card_view_1_layout_2"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:cardCornerRadius="15dp"
+        app:cardBackgroundColor="#FFFFFF"
+        app:cardElevation="2dp">
+
+        <ImageView
+            android:id="@+id/recycler_game_img_2_layout_2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"/>
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/recycler_game_view_2_layout_2"
+        android:layout_width="64dp"
+        android:layout_height="16dp"
+        android:layout_below="@+id/card_view_2_layout_2"
+        android:layout_marginLeft="23dp"
+        android:layout_marginTop="6dp"
+        android:layout_toRightOf="@+id/recycler_game_view_1_layout_2"
+        android:gravity="center"
+
+        android:maxLines="1"
+        android:ellipsize="end"
+
+        android:text="hello"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/recycler_game_brief_2_layout_2"
+        android:layout_width="64dp"
+        android:layout_height="12dp"
+        android:layout_below="@+id/recycler_game_view_2_layout_2"
+        android:layout_marginLeft="23dp"
+        android:layout_toRightOf="@+id/recycler_game_view_1_layout_2"
+        android:gravity="center"
+
+        android:maxLines="1"
+        android:ellipsize="end"
+
+        android:text="hello"
+        android:textSize="10sp" />
+
+    <Button
+        android:id="@+id/recycler_view_2_play_layout_2"
+        android:layout_width="46dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginLeft="31dp"
+        android:gravity="center"
+        android:layout_below="@+id/recycler_game_brief_2_layout_2"
+        android:layout_toRightOf="@+id/recycler_game_brief_1_layout_2"
+        android:textSize="12sp"
+        android:background="@drawable/button_border"
+        android:text="秒玩"
+        android:textStyle="bold"
+
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <!--    3-->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view_3_layout_2"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="23dp"
+        android:layout_toRightOf="@+id/card_view_2_layout_2"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:cardCornerRadius="15dp"
+        app:cardBackgroundColor="#FFFFFF"
+        app:cardElevation="2dp">
+
+        <ImageView
+            android:id="@+id/recycler_game_img_3_layout_2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"/>
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/recycler_game_view_3_layout_2"
+        android:layout_width="64dp"
+        android:layout_height="16dp"
+        android:layout_below="@+id/card_view_3_layout_2"
+        android:layout_marginLeft="23dp"
+        android:layout_marginTop="6dp"
+        android:layout_toRightOf="@+id/recycler_game_view_2_layout_2"
+        android:gravity="center"
+
+        android:maxLines="1"
+        android:ellipsize="end"
+
+        android:text="hello"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/recycler_game_brief_3_layout_2"
+        android:layout_width="64dp"
+        android:layout_height="12dp"
+        android:layout_below="@+id/recycler_game_view_3_layout_2"
+        android:layout_marginLeft="23dp"
+        android:layout_toRightOf="@+id/recycler_game_view_2_layout_2"
+        android:gravity="center"
+
+        android:maxLines="1"
+        android:ellipsize="end"
+
+        android:text="hello"
+        android:textSize="10sp" />
+
+    <Button
+        android:id="@+id/recycler_view_3_play_layout_2"
+        android:layout_width="46dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginLeft="31dp"
+        android:gravity="center"
+        android:layout_below="@+id/recycler_game_brief_3_layout_2"
+        android:layout_toRightOf="@+id/recycler_game_brief_2_layout_2"
+        android:textSize="12sp"
+        android:background="@drawable/button_border"
+        android:text="秒玩"
+        android:textStyle="bold"
+
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <!--    4-->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view_4_layout_2"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="23dp"
+        android:layout_toRightOf="@+id/card_view_3_layout_2"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:cardCornerRadius="15dp"
+        app:cardBackgroundColor="#FFFFFF"
+        app:cardElevation="2dp">
+
+        <ImageView
+            android:id="@+id/recycler_game_img_4_layout_2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"/>
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/recycler_game_view_4_layout_1"
+        android:layout_width="64dp"
+        android:layout_height="16dp"
+        android:layout_below="@+id/card_view_3_layout_2"
+        android:layout_marginLeft="23dp"
+        android:layout_marginTop="6dp"
+        android:layout_toRightOf="@+id/recycler_game_view_3_layout_2"
+        android:gravity="center"
+
+        android:maxLines="1"
+        android:ellipsize="end"
+
+        android:text="hello"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/recycler_game_brief_4_layout_2"
+        android:layout_width="64dp"
+        android:layout_height="12dp"
+        android:layout_below="@+id/recycler_game_view_3_layout_2"
+        android:layout_marginLeft="23dp"
+        android:layout_toRightOf="@+id/recycler_game_view_3_layout_2"
+        android:gravity="center"
+
+        android:maxLines="1"
+        android:ellipsize="end"
+
+        android:text="hello"
+        android:textSize="10sp" />
+
+    <Button
+        android:id="@+id/recycler_view_4_play_layout_2"
+        android:layout_width="46dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginLeft="31dp"
+        android:gravity="center"
+        android:layout_below="@+id/recycler_game_brief_3_layout_2"
+        android:layout_toRightOf="@+id/recycler_game_brief_3_layout_2"
+        android:textSize="12sp"
+        android:background="@drawable/button_border"
+        android:text="秒玩"
+        android:textStyle="bold"
+
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+</RelativeLayout>

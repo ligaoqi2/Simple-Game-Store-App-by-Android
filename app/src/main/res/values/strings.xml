@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">FinalPractice</string>
+    <string name="privacy_text">欢迎使用小游戏，我们将严格遵守相关法律和隐私政策以保护您的个人信息。请您阅读并同意<font color="#FFCD4F">《用户协议》</font>与<font color="#FFCD4F">《隐私协议》</font>。</string>
+    <string name="privacy_content">已阅读并同意<font color="#FFCD4F">《用户协议》</font>和<font color="#FFCD4F">《隐私政策》</font></string>
+</resources>

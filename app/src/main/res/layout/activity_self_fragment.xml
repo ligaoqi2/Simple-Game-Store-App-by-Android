@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="360dp"
+    android:layout_height="800dp"
+    android:layout_gravity="center_horizontal">
+    
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="309dp"
+        android:src="@color/customorange"/>
+
+    <ImageView
+        android:id="@+id/avatar_self_fragment"
+        android:layout_width="66dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="106dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/avatar_border"
+        android:alpha="0.7"/>
+
+    <ImageView
+        android:id="@+id/emoji"
+        android:layout_width="41dp"
+        android:layout_height="16dp"
+        android:layout_marginTop="132dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/avatar_default"
+        android:alpha="0.7"/>
+
+    <TextView
+        android:id="@+id/login_in"
+        android:layout_width="wrap_content"
+        android:layout_height="19dp"
+        android:layout_marginTop="183dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:text="点击登录"
+        android:textColor="@color/black"
+        android:textSize="12sp"/>
+
+    <TextView
+        android:id="@+id/log_out"
+        android:layout_width="wrap_content"
+        android:layout_height="19dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_gravity="end"
+        android:text="退出登录"
+        android:textColor="@color/black"
+        android:textSize="12sp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:background="@drawable/self_textview_border"
+        android:layout_height="531dp"
+        android:layout_gravity="bottom|center_horizontal"/>
+
+</FrameLayout>

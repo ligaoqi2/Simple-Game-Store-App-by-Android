@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="260dp"
+        android:layout_height="243dp">
+
+        <TextView
+            android:layout_width="86dp"
+            android:layout_height="23dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="34dp"
+            android:gravity="center"
+
+            android:text="声明与条款"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/text_privacy"
+            android:layout_width="236dp"
+            android:layout_height="80dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="73dp"
+
+            android:text="@string/privacy_text"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/disagree"
+            android:layout_width="42dp"
+            android:layout_height="19dp"
+            android:layout_above="@+id/agree"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+
+            android:text="不同意"
+            android:textColor="@color/gray"
+            android:textSize="13sp" />
+
+        <Button
+            android:id="@+id/agree"
+            android:layout_width="260dp"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:background="#FFCD4F"
+
+            android:text="同意并使用"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+    </RelativeLayout>
